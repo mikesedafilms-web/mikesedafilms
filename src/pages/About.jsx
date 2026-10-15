@@ -21,13 +21,16 @@ export default function About() {
       <div>
         <h1>About</h1>
         <p>
-          TBD. For example what genres and scenes you shoot, how you approach
-          stage lighting and pit dynamics, and the tours or publications you've
-          covered.
+          I am a concert photographer and videographer specializing in DIY
+          basements, packed club floors, and festival pits. I focus on capturing
+          raw live energy—sweat, stage dives, feedback, and the connection
+          between the band and the room.
         </p>
         <p>
-          MAybe add a second paragraph about how you like to work with bands and
-          what they can expect after a show.
+          Whether tracking a full tour stop or capturing an intimate release
+          show, I work quickly and inconspicuously in low-light environments.
+          Fast turnaround on social assets is standard so bands have media ready
+          to post the morning after the show.
         </p>
         <h2>Kit</h2>
         <ul className="kit">

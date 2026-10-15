@@ -1,80 +1,150 @@
-// ============ EDIT YOUR CONTENT HERE ============
-// Files in /public/photos are referenced with img("name.jpg"). This keeps paths
-// working on GitHub Pages, where the site lives in a subfolder.
+// Files in /public/photos are referenced with img("name.jpg").
 const img = (file) => import.meta.env.BASE_URL + "photos/" + file;
-const TEMP =
-  "https://blog.padi.com/wp-content/uploads/2014/12/Fotolia_64349981_S.jpg"; // temporary placeholder: swap each one for a real photo
-// Offline fallback: const TEMP = img("turtle.svg");
+const vid = (file) => import.meta.env.BASE_URL + "videos/" + file;
 
 export const PHOTOS = [
-  { src: TEMP, band: "Band A", venue: "Venue Name", date: "2026" },
-  { src: TEMP, band: "Band B", venue: "Venue Name", date: "2026" },
-  { src: TEMP, band: "Band A", venue: "Venue Name", date: "2026" },
-  { src: TEMP, band: "Band C", venue: "Venue Name", date: "2026" },
-  { src: TEMP, band: "Band B", venue: "Venue Name", date: "2026" },
-  { src: TEMP, band: "Festival / Crowd", venue: "Festival Name", date: "2026" },
-  { src: TEMP, band: "Band C", venue: "Venue Name", date: "2026" },
-  { src: TEMP, band: "Band A", venue: "Venue Name", date: "2026" },
-  { src: TEMP, band: "Festival / Crowd", venue: "Festival Name", date: "2026" },
-  { src: TEMP, band: "Band B", venue: "Venue Name", date: "2026" },
+  // --- Dear Season (Little Big Planet Show) ---
+  {
+    src: img("DearSeason01.jpg"),
+    band: "Dear Season",
+    venue: "Little Big Planet",
+    date: "Aug 2026",
+  },
+  {
+    src: img("DearSeason02.jpg"),
+    band: "Dear Season",
+    venue: "Little Big Planet",
+    date: "Aug 2026",
+  },
+  {
+    src: img("DearSeason03.jpg"),
+    band: "Dear Season",
+    venue: "Little Big Planet",
+    date: "Aug 2026",
+  },
+
+  // --- Fairwell (Little Big Planet Show) ---
+  {
+    src: img("Fairwell01.jpg"),
+    band: "Fairwell",
+    venue: "Little Big Planet",
+    date: "Aug 2026",
+  },
+  {
+    src: img("Fairwell02.jpg"),
+    band: "Fairwell",
+    venue: "Little Big Planet",
+    date: "Aug 2026",
+  },
+  {
+    src: img("Fairwell03.jpg"),
+    band: "Fairwell",
+    venue: "Little Big Planet",
+    date: "Aug 2026",
+  },
+
+  // --- Falling Behind (Little Big Planet Show) ---
+  {
+    src: img("FallingBehind01.jpg"),
+    band: "Falling Behind",
+    venue: "Little Big Planet",
+    date: "Aug 2026",
+  },
+  {
+    src: img("FallingBehind02.jpg"),
+    band: "Falling Behind",
+    venue: "Little Big Planet",
+    date: "Aug 2026",
+  },
+  {
+    src: img("FallingBehind03.jpg"),
+    band: "Falling Behind",
+    venue: "Little Big Planet",
+    date: "Aug 2026",
+  },
+
+  // --- Extra / Archival Film Works ---
+  {
+    src: img("SCAN0001.jpg"),
+    band: "Film Studies",
+    venue: "Macro / Nature",
+    date: "2026",
+  },
 ];
 
-// YouTube ID = the part after v= in the link
-export const FEATURED = { id: "dQw4w9WgXcQ", title: "2026 Live Reel" };
+// If you host them on YouTube or Vimeo, paste the video ID here: Local video files from /public/videos/
+export const FEATURED = {
+  src: vid("WSG_NEWS PROMO_FINAL.mov"),
+  title: "Two Down — Official Promo",
+  poster: img("twodown_thumb.jpg"),
+};
+
 export const VIDEOS = [
-  { id: "dQw4w9WgXcQ", title: "Band A live at Venue", note: "Live clip" },
-  { id: "dQw4w9WgXcQ", title: "Band B tour diary", note: "Tour diary" },
-  { id: "dQw4w9WgXcQ", title: "Festival recap", note: "Recap" },
-  { id: "dQw4w9WgXcQ", title: "Band C music video", note: "Music video" },
+  {
+    src: vid("TWODOWNPROMO_FINAL.mov"),
+    title: "Two Down // Live Basement Promo",
+    note: "Live set recap",
+    poster: img("twodown_thumb.jpg"),
+  },
+  {
+    src: vid("WSG_NEWS PROMO_FINAL.mov"),
+    title: "WSG News // Promo Reel",
+    note: "Official promo edit",
+    poster: img("wsg_thumb.jpg"),
+  },
 ];
 
 export const TIERS = [
   {
     name: "Local Show Coverage",
-    price: "$TBD",
+    price: "$175",
     items: [
-      "Full set coverage",
-      "15+ edited photos",
+      "Full set & pit coverage",
+      "15+ high-res edited photos",
       "24-hour turnaround on 5 social edits",
-      "Gallery within 5 business days",
-      "Personal and promo license",
+      "Online gallery delivered within 5 business days",
+      "Full personal and promotional license",
     ],
   },
   {
     name: "Tour Date / Festival",
-    price: "$TBD",
+    price: "$350",
     items: [
-      "Soundcheck through headline set",
-      "40+ edited photos",
-      "Backstage and crowd candids",
-      "Same-day social edits",
-      "Press-ready gallery",
+      "Soundcheck through headline encore",
+      "40+ retouched concert & crowd captures",
+      "Backstage, green room, and pit candids",
+      "Priority same-night social delivery",
+      "Press-ready digital archive",
     ],
   },
   {
     name: "Promo / Press Kit",
-    price: "$TBD",
+    price: "$225",
     items: [
-      "1-hour band portrait session",
-      "10 retouched final images",
-      "Press and social license",
-      "Delivered within 7 days",
+      "60-minute outdoor or on-location band portrait session",
+      "10 fully retouched final images (color & B&W)",
+      "Album art, Spotify canvas, and press licensing",
+      "Delivered within 7 business days",
     ],
   },
 ];
 
 export const CONTACT = {
-  email: "youremail@domain.com",
-  instagram: "https://www.instagram.com/christinademerzi",
-  handle: "@christinademerzi",
-  formspree: "https://formspree.io/f/YOUR_FORM_ID", // paste your Formspree URL
+  email: "mikeseda.films@gmail.com",
+  instagram: "https://www.instagram.com/mikeseda_films",
+  handle: "@mikeseda_films",
+  formspree: "https://formspree.io/f/YOUR_FORM_ID", // Replace with your Formspree endpoint
 };
 
 export const KIT = [
-  "Sony A7 IV body",
-  "24-70mm f/2.8 and 70-200mm f/2.8",
-  "35mm f/1.4 prime",
-  "Adobe Lightroom and Photoshop",
+  "Sony A7 IV full-frame mirrorless body",
+  "FE 24-70mm f/2.8 GM & FE 70-200mm f/2.8 GM",
+  "FE 35mm f/1.4 GM prime",
+  "Adobe Lightroom Classic, Photoshop, and Premiere Pro",
 ];
-export const ABOUT_MAIN = TEMP; // e.g. img("me.jpg")
-export const ABOUT_EXTRA = []; // e.g. [img("pit.jpg"), img("backstage.jpg")]
+
+// Profile photo (Your night outdoor portrait)
+export const ABOUT_MAIN = img("ProfilePicture.jpg");
+
+// Secondary photography features on the About page
+export const ABOUT_EXTRA = [img("SCAN0001.jpg")];
