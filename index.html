@@ -1,17 +1,31 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Michael Seda | Concert & Band Photographer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Michael Seda — concert photographer and videographer. Live music, up close." />
+  <meta name="theme-color" content="#070707" />
+  <title>Michael Seda — Concert Photography &amp; Video</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <a class="logo" href="#/">Michael Seda</a>
+    <nav aria-label="Main">
+      <a href="#/" data-route="/">Work</a>
+      <a href="#/video" data-route="/video">Video</a>
+      <a href="#/booking" data-route="/booking">Services &amp; Booking</a>
+      <a href="#/about" data-route="/about">About</a>
+    </nav>
+  </header>
+
+  <main id="app"></main>
+  <footer id="footer"></footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
 </html>
